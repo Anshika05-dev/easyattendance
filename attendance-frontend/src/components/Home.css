@@ -1,0 +1,74 @@
+/* Main Container */
+#home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* padding: 20px; */
+    
+}
+
+/* Statistics Card */
+#stats-card {
+    width: 25%;
+    background: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Hover Effect */
+#stats-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Title */
+#stats-card h4 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Separator Line */
+#stats-card hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Student Count Display */
+#stats-card h5 {
+    font-size: 16px;
+    color: #007bff;
+}
+
+/* Create Session Button */
+#create-session-btn {
+    margin-top: 0px;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+    margin-bottom: 25px;
+}
+
+#create-session-btn:hover {
+    background: #0056b3;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #stats-card {
+        width: 90%;
+    }
+    #create-session-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
